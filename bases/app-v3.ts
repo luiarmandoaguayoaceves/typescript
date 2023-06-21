@@ -1,5 +1,3 @@
-import { Script } from "vm";
-
 // Objetos
 type automovil = {
   carroceria: string,
@@ -49,26 +47,26 @@ const villanos: villanoInfo[] = [{
 // Multiples tipos
 // cree dos tipos, uno para charles y otro para apocalipsis
 
-type datos = {
+type Charles = {
   poder: string,
   estatura: Number
 }
-type organizacion = {
+type Apocalipsis = {
   lider: boolean,
   miembros: string[]
 }
-const charles: datos  = {
+const charles: Charles  = {
   poder:"psiquico",
   estatura: 1.78
 };
 
-const apocalipsis: organizacion = {
+const apocalipsis: Apocalipsis = {
   lider:true,
   miembros: ["Magneto","Tormenta","Psylocke","Angel"]
 }
 
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-let mystique: organizacion | datos;
+let mystique: Charles | Apocalipsis;
 
 mystique = charles;
 mystique = apocalipsis;
