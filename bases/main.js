@@ -14,4 +14,23 @@
         }
     };
 })();
+(() => {
+    const client = {
+        name: 'Luis',
+        age: 26,
+        address: {
+            id: 10345789,
+            zip: "123",
+            city: 'somewhere'
+        },
+    };
+    const Client2 = {
+        name: '<NAME>',
+        address: {
+            id: -1,
+            zip: "",
+            city: ''
+        },
+    };
+})();
 //# sourceMappingURL=main.js.map
