@@ -1,3 +1,5 @@
+/* Se puede realizar implementacion de metodos en una interfaz pero lo recomendable es hacerlo en las clases crear una clase y ahi generarle el metodo */
+
 ( () => {
 
 
@@ -6,6 +8,7 @@
         name: string;
         age?: number;
         address: Address;
+        getfullAddress (id: string): string;
     }
 
     interface Address {
@@ -22,6 +25,9 @@
             zip: "123",
             city:'somewhere'
         },
+        getfullAddress (id: string) { 
+            return this.address.city;
+        },
     };
 
     const Client2: Client = {
@@ -31,6 +37,9 @@
             id: -1,
             zip: "",
             city: ''
+        },
+        getfullAddress (id: string) { 
+            return this.address.city;
         },
     };
 
