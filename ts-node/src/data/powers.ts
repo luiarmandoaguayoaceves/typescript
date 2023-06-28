@@ -5,7 +5,7 @@ interface Powers {
     description: string
 }
 
-const powers: Powers[] = 
+export const powers: Powers[] = 
 [
     {
         id: 1,
