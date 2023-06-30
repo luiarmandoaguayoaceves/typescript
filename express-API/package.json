@@ -1,0 +1,13 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "API REST  para usar dependencias de terceros en typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"",
+    "start":""
+  },
+  "author": "Luis Armando Aguayo Aceves",
+  "license": "ISC"
+}
